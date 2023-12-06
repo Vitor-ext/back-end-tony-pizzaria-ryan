@@ -22,7 +22,7 @@ app.use((request, response, next) => {
 })  
 
 // EndPoints: Listar o nome, id, email e senha de todos os usuários
-app.get('https://tony-pizzaria.netlify.app//usuarios/', cors(), async (request, response, next) => {
+app.get('https://tony-pizzaria.netlify.app/usuarios/', cors(), async (request, response, next) => {
 
     response.json(funcoes.getListaUsuarios())
     response.status(200)
@@ -30,7 +30,7 @@ app.get('https://tony-pizzaria.netlify.app//usuarios/', cors(), async (request, 
 })
 
 // EndPoints: Listar os dados de um usuário
-app.get('https://tony-pizzaria.netlify.app//usuario/:id', cors(), async (request, response, next) => {
+app.get('https://tony-pizzaria.netlify.app/usuario/:id', cors(), async (request, response, next) => {
 
     let id = request.params.id
 
@@ -45,7 +45,7 @@ app.get('https://tony-pizzaria.netlify.app//usuario/:id', cors(), async (request
 })
 
 // EndPoints: Listar o nome e imagem das categorias
-app.get('https://tony-pizzaria.netlify.app//categorias/', cors(), async (request, response, next) => {
+app.get('https://tony-pizzaria.netlify.app/categorias/', cors(), async (request, response, next) => {
 
     response.json(funcoes.getListaCategorias())
     response.status(200)
@@ -53,14 +53,14 @@ app.get('https://tony-pizzaria.netlify.app//categorias/', cors(), async (request
 })
 
 // EndPoints: Listar o nome, imagem e preço das pizzas
-app.get('https://tony-pizzaria.netlify.app//pizzas/', cors(), async (request, response, next) => {
+app.get('https://tony-pizzaria.netlify.app/pizzas/', cors(), async (request, response, next) => {
 
     response.json(funcoes.getListaPizzas())
     response.status(200)
     
 })
 
-app.get('https://tony-pizzaria.netlify.app//pizzas/favoritas', cors(), async (request, response, next) => {
+app.get('https://tony-pizzaria.netlify.app/pizzas/favoritas', cors(), async (request, response, next) => {
 
     response.json(funcoes.getListaPizzasFavoritas())
     response.status(200)
@@ -68,7 +68,7 @@ app.get('https://tony-pizzaria.netlify.app//pizzas/favoritas', cors(), async (re
 })
 
 // EndPoints: Listar as informações de uma pizza
-app.get('https://tony-pizzaria.netlify.app//pizza/:id', cors(), async (request, response, next) => {
+app.get('https://tony-pizzaria.netlify.app/pizza/:id', cors(), async (request, response, next) => {
 
     let id = request.params.id
 
@@ -83,7 +83,7 @@ app.get('https://tony-pizzaria.netlify.app//pizza/:id', cors(), async (request, 
 })
 
 // EndPoints: Listar os comentários de uma pizza
-app.get('https://tony-pizzaria.netlify.app//comentarios/:id', cors(), async (request, response, next) => {
+app.get('https://tony-pizzaria.netlify.app/comentarios/:id', cors(), async (request, response, next) => {
 
     let id = request.params.id
 
@@ -98,7 +98,7 @@ app.get('https://tony-pizzaria.netlify.app//comentarios/:id', cors(), async (req
 })
 
 // EndPoints: Listar as informações de todas as bebidas
-app.get('https://tony-pizzaria.netlify.app//bebidas/', cors(), async (request, response, next) => {
+app.get('https://tony-pizzaria.netlify.app/bebidas/', cors(), async (request, response, next) => {
 
     let id = request.params.id
 

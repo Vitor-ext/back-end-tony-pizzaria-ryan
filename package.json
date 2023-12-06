@@ -6,6 +6,6 @@
   },
   "scripts": {
     "build": "tsc",
-    "start": "node ./app.js" 
+    "start": "node app.js" 
   }
 }

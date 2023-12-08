@@ -10,7 +10,7 @@
 ## Descrição 🌺
 - API desenvolvida com Node.js
 - Retorna informações como categorias, usuários e pizzas
-- Métodos disponpiveis: GET
+- Métodos disponíveis: GET
 
 
 ## Como utilizar 🪻

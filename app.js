@@ -15,7 +15,7 @@ const app = express()
 app.use((request, response, next) => {
 
     response.header('Access-Control-Allow-Origin', '*')
-    response.header('Access-Control-Allow-Methods', '*')
+    response.header('Access-Control-Allow-Methods', 'GET, OPTIONS')
     response.header('Access-Control-Allow-Headers', '*')
     app.use(cors)
     next()

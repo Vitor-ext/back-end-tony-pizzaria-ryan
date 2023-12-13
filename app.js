@@ -12,15 +12,15 @@ const funcoes = require('./model/funcoes.js')
 
 const app = express()
 
-app.use((request, response, next) => {
+// app.use((request, response, next) => {
 
-    // response.header('Access-Control-Allow-Origin', '*')
-    // response.header('Access-Control-Allow-Methods', '*')
-    // response.header('Access-Control-Allow-Headers', '*')
-    app.use(cors)
-    next()
+//     response.header('Access-Control-Allow-Origin', '*')
+//     response.header('Access-Control-Allow-Methods', '*')
+//     response.header('Access-Control-Allow-Headers', '*')
+//     app.use(cors)
+//     next()
 
-})  
+// })  
 
 // EndPoints: Listar o nome, id, email e senha de todos os usuários
 app.get('/usuarios/', cors(), async (request, response, next) => {

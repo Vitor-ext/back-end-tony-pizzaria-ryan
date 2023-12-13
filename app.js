@@ -18,7 +18,7 @@ app.use((request, response, next) => {
     response.header('Access-Control-Allow-Credentials', true)
     response.header('Access-Control-Allow-Methods', 'GET, OPTIONS, PATCH, DELETE, POST, PUT')
     response.header('Access-Control-Allow-Headers', 'X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version')
-    app.use(cors)
+    app.use(cors())
     next()
 
 })  

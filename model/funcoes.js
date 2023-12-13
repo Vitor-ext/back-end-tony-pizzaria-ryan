@@ -9,6 +9,8 @@ var dados = require('./dados')
 
 const getListaUsuarios = () => {
 
+    
+
     const usuariosInfo = dados.usuarios.usuario 
     let usuariosArray = []
     let usuariosJSON = {} 
